@@ -92,7 +92,7 @@ if __name__ == '__main__':
     print('Building the model...')
     cat = CAT(cdb=cdb, vocab=vocab)
     
-    print('Building account directories...')
+    print('Building mrn directories...')
     mrns = [path_mrns + '/' + x for x in os.listdir(path_mrns)]
     total = len(mrns)
     
@@ -106,7 +106,7 @@ if __name__ == '__main__':
         if len(errs) != 0:
             error_logs.append(errs)
             
-    print('Saving stats and error log')
+    print('Saving stats and error log...')
     w = csv.writer(open(path_medcat + "/stats.csv", "w", newline=''))
     for key, val in stats_dicts.items():
         w.writerow([key, val])
