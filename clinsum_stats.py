@@ -96,7 +96,7 @@ if __name__ == '__main__':
     mrns = [path_mrns + '/' + x for x in os.listdir(path_mrns)]
     total = len(mrns)
     
-    print('{} available accounts \n'.format(total))
+    print('{} available mrns \n'.format(total))
     stats_dicts = {}
     error_logs = []
     
